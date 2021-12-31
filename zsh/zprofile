@@ -2,7 +2,7 @@
 # Homebrew
 #
 
-if [[ "$OSTYPE" == darwin* && "$(which brew)" == /opt/homebrew/bin/brew ]]; then
+if [[ "$OSTYPE" == darwin* ]]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 

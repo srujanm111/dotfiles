@@ -17,4 +17,11 @@ fi
 #########################
 
 # ~/.vim
-mkdir -p ~/.vim ~/.vim/colors
+mkdir -p ~/.vim ~/.vim/colors ~/.vim/plugged
+
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# install plugins
+vim +PlugInstall +qall

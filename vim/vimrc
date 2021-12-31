@@ -21,3 +21,29 @@ set relativenumber
 
 " Set color theme
 colorscheme mytheme
+
+
+" LIGHTLINE
+
+" Set lightline color theme
+let g:lightline = {'colorscheme': 'wombat',}
+
+" Show lightline status line
+set laststatus=2
+
+" Prevent lightline lag
+set ttimeout ttimeoutlen=0 
+
+" Hide file info at bottom
+set shortmess=F
+
+" Don't show mode at bottom
+set noshowmode
+
+
+" VIMPLUG
+
+" Specify vim-plug plugins
+call plug#begin('~/.vim/plugged')
+Plug 'itchyny/lightline.vim'
+call plug#end()
