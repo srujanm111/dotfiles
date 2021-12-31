@@ -2,3 +2,6 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+# add sublime text command to path
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"

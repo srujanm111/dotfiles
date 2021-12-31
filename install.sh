@@ -11,3 +11,10 @@ if [[ ! -d "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
 else
     echo "prezto already installed, will update"
 fi
+
+#########################
+# VIM
+#########################
+
+# ~/.vim
+mkdir -p ~/.vim ~/.vim/colors
