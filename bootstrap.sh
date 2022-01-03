@@ -15,3 +15,6 @@ ln -s $DIR/zsh/p10k.zsh "${ZDOTDIR:-$HOME}"/.p10k.zsh
 # vim
 ln -s $DIR/vim/vimrc $HOME/.vimrc
 ln -s $DIR/vim/mytheme.vim $HOME/.vim/colors/mytheme.vim
+
+# other config
+ln -s $DIR/config/gitconfig $HOME/.gitconfig

@@ -1,0 +1,12 @@
+[user]
+	email = srujanmup@gmail.com
+	name = srujanm111
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	autocrlf = input
+[alias]
+	graph = log --all --graph --decorate --oneline
