@@ -9,7 +9,11 @@ if [[ ! -d "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
     echo "installing prezto"
     git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 else
-    echo "prezto already installed, will update"
+    echo "prezto already installed, updating"
+    cd "${ZDOTDIR:-$HOME}/.zprezto"
+    git pull
+    git submodule update --init --recursive
+    cd -
 fi
 
 #########################
