@@ -5,3 +5,4 @@ fi
 
 # add sublime text command to path
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+export PATH="$HOME/software/flutter/bin:$PATH"
