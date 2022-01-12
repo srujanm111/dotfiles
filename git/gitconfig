@@ -11,3 +11,5 @@
 	excludesfile = /Users/srujanmupparapu/.gitignore_global
 [alias]
 	graph = log --all --graph --decorate --oneline
+[init]
+	defaultBranch = main
