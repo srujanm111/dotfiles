@@ -3,6 +3,5 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-# add sublime text command to path
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+# add flutter command to path
 export PATH="$HOME/software/flutter/bin:$PATH"

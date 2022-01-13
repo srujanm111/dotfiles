@@ -23,8 +23,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # ALIASES
 
-# open sublime text in new window
-alias subl="subl -n"
+# open atom in new window by default
+alias atom="atom -n"
 
 # quickly setup gradeway test server
 alias gradeway="http-server $HOME/GradeWayResources/HtmlTestServer"
