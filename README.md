@@ -15,6 +15,7 @@ bootstrap.sh does symlinking for you!
 02. Run the setup script:
 
     ```console
+    cd dotfiles
     sh easysetup.sh
     ```
 
