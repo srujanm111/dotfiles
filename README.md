@@ -24,6 +24,9 @@ bootstrap.sh does symlinking for you!
       The setup script will place zsh-related dotfiles in your home directory if you haven't set `$ZDOTDIR`. If you want to be more organized, you can configure zsh to use a subdirectory like ~/.zsh/ for these files. BEFORE you run the setup script, you can do this by adding ```export ZDOTDIR=~/.zsh``` to your system-level zshenv and restarting your terminal.
     </details>
 
+03. Additional steps:
+ - [Install the recommended font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) if terminal prompt icons don't show or run `p10k configure` to configure your own prompt with the setup wizard
+
 ## Updating
 
 Run `install.sh` to get the latest versions of software being used. It is safe to run `install.sh` more than once.
