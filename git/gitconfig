@@ -1,15 +1,19 @@
-[user]
-	email = srujanmup@gmail.com
-	name = srujanm111
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [core]
 	autocrlf = input
-	excludesfile = /Users/srujanmupparapu/.gitignore_global
+	excludesfile = ~/.gitignore_global
+
 [alias]
 	graph = log --all --graph --decorate --oneline
+
 [init]
 	defaultBranch = main
+
+# Allow local customizations in the .gitconfig_local file
+[include]
+	path = ~/.gitconfig_local
