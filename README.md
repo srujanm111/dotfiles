@@ -18,6 +18,11 @@ bootstrap.sh does symlinking for you!
     cd dotfiles
     sh easysetup.sh
     ```
+    <details>
+      <summary><em>Optional: installation tip</em></summary>
+
+      The setup script will place zsh-related dotfiles in your home directory if you haven't set `$ZDOTDIR`. If you want to be more organized, you can configure zsh to use a subdirectory like ~/.zsh/ for these files. BEFORE you run the setup script, you can do this by adding ```export ZDOTDIR=~/.zsh``` to your system-level zshenv and restarting your terminal.
+    </details>
 
 ## Updating
 
