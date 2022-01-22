@@ -1,6 +1,6 @@
 # Srujan's Dotfiles
 
-This repository contains my custom configuration files.
+This repository contains my custom configuration files for many terminal and developer related things.
 
 bootstrap.sh does symlinking for you!
 
