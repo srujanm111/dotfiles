@@ -8,7 +8,7 @@ chmod +x $DIR/install.sh
 chmod +x $DIR/bootstrap.sh
 
 # run scripts
-$DIR/install.sh
 $DIR/bootstrap.sh
+$DIR/install.sh
 
 echo "done"

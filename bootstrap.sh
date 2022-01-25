@@ -46,6 +46,7 @@ symlink "$DIR"/zsh/zshrc "${ZDOTDIR:-$HOME}"/.zshrc
 symlink "$DIR"/zsh/p10k.zsh "${ZDOTDIR:-$HOME}"/.p10k.zsh
 
 # vim
+mkdir -p ~/.vim/colors
 symlink "$DIR"/vim/vimrc "$HOME"/.vimrc
 symlink "$DIR"/vim/mytheme.vim "$HOME"/.vim/colors/mytheme.vim
 
