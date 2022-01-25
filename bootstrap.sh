@@ -23,7 +23,7 @@ symlink () {
       read "ANS?$SYMLINK_FILE already exists. Overwrite it? (y/n): "
       case "$ANS" in
         [yY]*) rm -f "$SYMLINK_FILE"; break;;
-        [nY]*) return;;
+        [nN]*) return;;
         *) echo "Please enter y/n"
       esac
     done
