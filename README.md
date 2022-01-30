@@ -2,7 +2,7 @@
 
 This repository contains my custom configuration files for many terminal and developer related things.
 
-bootstrap.sh does symlinking for you!
+bootstrap.sh symlinks my config files into your home directory and prompts you if it needs to override something!
 
 ## Setup/Installation
 
