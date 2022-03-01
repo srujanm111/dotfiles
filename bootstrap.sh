@@ -53,3 +53,6 @@ symlink "$DIR"/vim/mytheme.vim "$HOME"/.vim/colors/mytheme.vim
 # git
 symlink "$DIR"/git/gitconfig "$HOME"/.gitconfig
 symlink "$DIR"/git/gitignore_global "$HOME"/.gitignore_global
+
+# tmux
+symlink "$DIR"/tmux/tmux.conf "$HOME"/.tmux.conf
