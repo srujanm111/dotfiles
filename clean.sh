@@ -10,10 +10,12 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 # zsh
 rm "${ZDOTDIR:-$HOME}"/.zlogin
 rm "${ZDOTDIR:-$HOME}"/.zlogout
-rm "${ZDOTDIR:-$HOME}"/.zpreztorc
 rm "${ZDOTDIR:-$HOME}"/.zprofile
 rm "${ZDOTDIR:-$HOME}"/.zshenv
 rm "${ZDOTDIR:-$HOME}"/.zshrc
+
+# prezto
+rm "${ZDOTDIR:-$HOME}"/.zpreztorc
 rm "${ZDOTDIR:-$HOME}"/.p10k.zsh
 
 # vim
@@ -23,5 +25,8 @@ rm "$HOME"/.vim/colors/mytheme.vim
 # git
 rm "$HOME"/.gitconfig
 rm "$HOME"/.gitignore_global
+
+# tmux
+rm "$HOME"/.tmux.conf
 
 echo "Removed symlinks"

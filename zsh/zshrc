@@ -1,6 +1,4 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Enable Powerlevel10k instant prompt.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -12,16 +10,3 @@ fi
 
 # To customize prompt, run `p10k configure` or edit .p10k.zsh.
 [[ ! -f "${ZDOTDIR:-$HOME}"/.p10k.zsh ]] || source "${ZDOTDIR:-$HOME}"/.p10k.zsh
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-# load nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# load nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-
-# ALIASES
-
-# quickly setup gradeway test server
-alias gradeway="http-server $HOME/GradeWayResources/HtmlTestServer"
