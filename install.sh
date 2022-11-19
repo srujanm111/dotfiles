@@ -1,20 +1,20 @@
 #!/usr/bin/env zsh
 
 #########################
+# Starship
+#########################
+
+curl -sS https://starship.rs/install.sh | sh
+
+#########################
 # ZSH
 #########################
 
-# Prezto
-if [[ ! -d "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
-    echo "installing prezto"
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-else
-    echo "prezto already installed, updating"
-    cd "${ZDOTDIR:-$HOME}/.zprezto"
-    git pull
-    git submodule update --init --recursive
-    cd -
-fi
+# autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions "${ZDOTDIR:-$HOME}"/zsh-autosuggestions
+
+# syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZDOTDIR:-$HOME}"/zsh-syntax-highlighting
 
 #########################
 # VIM

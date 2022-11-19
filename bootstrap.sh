@@ -39,20 +39,22 @@ symlink () {
 # zsh
 symlink "$DIR"/zsh/zlogin "${ZDOTDIR:-$HOME}"/.zlogin
 symlink "$DIR"/zsh/zlogout "${ZDOTDIR:-$HOME}"/.zlogout
-symlink "$DIR"/zsh/zpreztorc "${ZDOTDIR:-$HOME}"/.zpreztorc
 symlink "$DIR"/zsh/zprofile "${ZDOTDIR:-$HOME}"/.zprofile
 symlink "$DIR"/zsh/zshenv "${ZDOTDIR:-$HOME}"/.zshenv
 symlink "$DIR"/zsh/zshrc "${ZDOTDIR:-$HOME}"/.zshrc
-symlink "$DIR"/zsh/p10k.zsh "${ZDOTDIR:-$HOME}"/.p10k.zsh
+
+# starship
+mkdir -p "$HOME"/.config
+symlink "$DIR"/config/starship.toml "$HOME"/.config/starship.toml
 
 # vim
-mkdir -p ~/.vim/colors
-symlink "$DIR"/vim/vimrc "$HOME"/.vimrc
-symlink "$DIR"/vim/mytheme.vim "$HOME"/.vim/colors/mytheme.vim
+mkdir -p "$HOME"/.vim/colors
+symlink "$DIR"/config/vimrc "$HOME"/.vimrc
+symlink "$DIR"/config/mytheme.vim "$HOME"/.vim/colors/mytheme.vim
 
 # git
-symlink "$DIR"/git/gitconfig "$HOME"/.gitconfig
-symlink "$DIR"/git/gitignore_global "$HOME"/.gitignore_global
+symlink "$DIR"/config/gitconfig "$HOME"/.gitconfig
+symlink "$DIR"/config/gitignore_global "$HOME"/.gitignore_global
 
 # tmux
-symlink "$DIR"/tmux/tmux.conf "$HOME"/.tmux.conf
+symlink "$DIR"/config/tmux.conf "$HOME"/.tmux.conf

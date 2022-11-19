@@ -3,11 +3,5 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-# add flutter command to path
-export PATH="$HOME/software/flutter/bin:$PATH"
-
-# add conda command to path
-export PATH="/opt/homebrew/anaconda3/bin:$PATH"
-
-# other
-export PATH="$HOME/tools:$PATH"
+# custom environment
+source .config/shell/settings
