@@ -4,4 +4,6 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 # custom environment
-source "$HOME"/.config/shell/settings
+if [[ -f "$HOME/.config/shell/settings" ]]; then
+    source "$HOME"/.config/shell/settings
+fi
