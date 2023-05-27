@@ -1,27 +1,21 @@
 #!/usr/bin/env zsh
 
-#########################
-# PREZTO
-#########################
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 
-if [[ ! -d "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
-    echo "installing prezto"
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-else
-    echo "prezto already installed, updating"
-    cd "${ZDOTDIR:-$HOME}/.zprezto"
-    git pull
-    git submodule update --init --recursive
-    cd -
-fi
+# zsh-zutosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions "${ZDOTDIR:-$HOME}"/ohmyzsh/custom/plugins/zsh-autosuggestions
 
-#########################
-# VIM PLUGINS
-#########################
+# zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZDOTDIR:-$HOME}"/ohmyzsh/custom/plugins/zsh-syntax-highlighting
+
+# powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZDOTDIR:-$HOME}"/ohmyzsh/custom/themes/powerlevel10k
 
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# install plugins
+# install vim plugins
 vim +PlugInstall +qall
+

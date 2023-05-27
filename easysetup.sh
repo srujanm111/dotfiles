@@ -11,4 +11,5 @@ chmod +x $DIR/bootstrap.sh
 $DIR/bootstrap.sh
 $DIR/install.sh
 
-echo "done"
+# run shell
+exec zsh -l

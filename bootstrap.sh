@@ -37,15 +37,13 @@ symlink () {
 # SYMLINKS
 
 # zsh
+mkdir -p "${ZDOTDIR:-$HOME}"
 symlink "$DIR"/zsh/zlogin "${ZDOTDIR:-$HOME}"/.zlogin
 symlink "$DIR"/zsh/zlogout "${ZDOTDIR:-$HOME}"/.zlogout
 symlink "$DIR"/zsh/zprofile "${ZDOTDIR:-$HOME}"/.zprofile
 symlink "$DIR"/zsh/zshenv "${ZDOTDIR:-$HOME}"/.zshenv
 symlink "$DIR"/zsh/zshrc "${ZDOTDIR:-$HOME}"/.zshrc
-
-# prezto
-symlink "$DIR"/prezto/zpreztorc "${ZDOTDIR:-$HOME}"/.zpreztorc
-symlink "$DIR"/prezto/p10k.zsh "${ZDOTDIR:-$HOME}"/.p10k.zsh
+symlink "$DIR"/zsh/p10k.zsh "${ZDOTDIR:-$HOME}"/.p10k.zsh
 
 # vim
 mkdir -p ~/.vim/colors

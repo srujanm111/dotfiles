@@ -13,9 +13,6 @@ rm "${ZDOTDIR:-$HOME}"/.zlogout
 rm "${ZDOTDIR:-$HOME}"/.zprofile
 rm "${ZDOTDIR:-$HOME}"/.zshenv
 rm "${ZDOTDIR:-$HOME}"/.zshrc
-
-# prezto
-rm "${ZDOTDIR:-$HOME}"/.zpreztorc
 rm "${ZDOTDIR:-$HOME}"/.p10k.zsh
 
 # vim
